@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fractionated Morse Code Practice - Interactive Mode</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Interactive Fractionated Morse Code Practice</h1>
+
+    <!-- Instructions -->
+    <div class="instructions">
+      <p>Welcome to the Fractionated Morse Code Practice. Try to decode the message before time runs out!</p>
+    </div>
+
+    <!-- Controls -->
+    <div class="controls">
+      <button onclick="generateCipher()">Generate New Cipher</button>
+      <button onclick="checkAnswer()">Check Answer</button>
+      <button onclick="clearPractice()">Clear</button>
+      <button onclick="startTimer()" id="startTimer">Start Timer</button>
+       <!-- Score -->
+      <button id="score">Score: 0</button>
+    </div>
+    <div  class="controls">
+    
+      <!-- Dropdown menu for hint selection -->
+      <select id="hintSelect">
+        <option value="start">Starts with</option>
+        <option value="end">Ends with</option>
+      </select>
+        <!-- Button to get hint -->
+        <button onclick="showHint()">Get Hint</button>
+          <!-- Display hint -->
+      <span class="hint" id="hintDisplay"></span>
+      <button onclick="showKeyword()">Keyword</button>
+      <span class="key" id="keywordDisplay"></span>
+    </div>
+    <!-- Display Cipher (Morse code) -->
+  <div class="cipher-display">
+      <h4>Encoded Message:</h4><pre id="cipherOutput"></pre>
+  </div>
+  <!-- Feedback Section -->
+  <div id="feedback"></div>
+  <!-- Decoded Message Display -->
+  <div class="cipher-display">
+    <h4>Decoded Message:</h4><pre id="decodedText"></pre> 
+  </div>
+  <div class="cipher-display"> 
+    <h4>Partial Output:</h4><pre id="decodedOutput"></pre>
+  </div>
+  <div>
+  <div class="encodedcontainer" id="letterContainer"></div>
+</div>
+  <table id="combinationMappingTable">
+      <thead>
+        <tr id="rowHeader">
+        </tr>
+      </thead>
+      <tbody>
+        <tr id="row1"></tr>
+        <tr id="row2"></tr>
+        <tr id="row3"></tr>
+      </tbody>
+    </table>
+    <!-- Display Cipher (Morse code) -->
+    <!-- <div class="decipher-display">
+      <h4>Fractionated Morse Decoded Text:</h4>
+      <pre id="decipherOutput"></pre>
+    </div> -->
+    <!-- Input Area for Student's Decoded Message -->
+    <div class="input centered-input">
+      <textarea id="decodedInput" rows="4" cols="30" placeholder="Type your decoded message here..." ></textarea>
+   </div>
+  
+  </div>
+
+    <!-- Morse Code Chart Container -->
+    <div class="morse-chart-container">
+      <!-- Section 1: Numbers 0-9 -->
+      <!-- <div class="chart-section" id="section1">
+        <button class="collapse-btn" onclick="toggleChart('section1')">Morse Code (0-9)</button>
+        <div id="morseCodeChart0to9" class="chart-content"></div>
+      </div> -->
+
+      <!-- Section 2: Characters A-M -->
+      <div class="chart-section" id="section1">
+        <button class="collapse-btn" onclick="toggleChart('section1')">Morse Code (A-M)</button>
+        <div id="morseCodeChartAtoM" class="chart-content"></div>
+      </div>
+
+      <!-- Section 3: Characters N-Z -->
+      <div class="chart-section" id="section2">
+        <button class="collapse-btn" onclick="toggleChart('section2')">Morse Code (N-Z)</button>
+        <div id="morseCodeChartNtoZ"  class="chart-content"></div>
+      </div>
+    </div>
+
+  <script src="morseCodeChart.js"></script>
+  <script src="script.js"></script>
+  <script src="timer.js"></script>
+</body>
+</html>

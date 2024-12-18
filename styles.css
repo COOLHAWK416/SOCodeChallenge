@@ -1,0 +1,212 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+    margin: 0;
+  }
+  
+  .container {
+    width: 70%;
+    margin: 0px 0px 0px 0px; 
+    text-align: center;
+  }
+  
+  h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
+  
+  .instructions {
+    margin-bottom: 20px;
+  }
+  
+  .controls button {
+    padding: 10px 20px;
+    margin: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .controls button:hover {
+    background-color: #45a049;
+  }
+  
+  .cipher-display, .input, #hint, #timer, #score, #feedback {
+    margin: 20px 0;
+  }
+  
+  #timer, #score {
+    font-size: 1.2em;
+  }
+  
+  .controls #hint{
+    font-family: monospace;
+    font-size: 0.5em;
+    color: #333;
+    padding: 10px;
+    background-color: #e8e8e8;
+    border-radius: 5px;
+    white-space: pre-wrap;
+  }
+ 
+  textarea {
+    padding: 10px;
+    width: 80%;
+    font-size: 1.1em;
+    border-radius: 5px;
+    margin-top: 10px;
+  }
+  
+  #feedback {
+    font-size: 1.2em;
+    margin-top: 20px;
+  }
+ 
+  table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+  }
+  table, th, td {
+    border: 1px solid black;
+  }
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  th {
+    background-color: #f2f2f2;
+  }
+  td {
+    width: 50px;
+  }
+  td[contenteditable="true"] {
+    background-color: #f9f9f9;
+    cursor: pointer;
+  }
+
+  .encodedcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0; 
+}
+.letter-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0; 
+    width: 100px;
+    height: 50px;
+    text-align: center;
+}
+.letter-box input {
+    width: 50%;
+    margin-top: 0;
+    text-align: center;
+    padding: 0;
+    box-sizing: border-box;
+    gap: 2px; 
+}
+.letter-box span {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.controls label {
+  font-size: 10px;
+  font-weight: bold;
+}
+
+h4, #cipherOutput {
+  display: inline-block; /* Display both elements inline */
+  margin: 5px;             /* Remove default margin */
+  vertical-align: top;   /* Align both elements to the top */
+  text-align: center;
+  font-weight: bold; 
+  white-space: pre-wrap; 
+  background-color: #f4f4f4;
+  max-width: 100%;
+  word-wrap: break-word;                  /* Break long words */
+  overflow-wrap: break-word;              /* Break words at appropriate points */
+  word-break: break-word; 
+  box-shadow: 0 4px 8px rgba(193, 32, 32, 0.1);
+}
+
+h4, #decodedText, #decodedOutput {
+  display: inline-block; /* Display both elements inline */
+  margin: 5px;             /* Remove default margin */
+  vertical-align: top;   /* Align both elements to the top */
+  text-align: center;
+  font-weight: bold;
+  white-space: pre-wrap; 
+  background-color: #f4f4f4;
+  max-width: 100%;
+  word-wrap: break-word;                  /* Break long words */
+  overflow-wrap: break-word;              /* Break words at appropriate points */
+  word-break: break-word; 
+  box-shadow: 0 4px 8px rgba(193, 32, 32, 0.1);
+  color: #11551d; /* Text color */
+}
+
+.morse-chart-container {
+  display: flex;
+  justify-content: flex-start; /* Align items to the left side of the container */
+  gap: 0; /* No space between sections */
+  margin-top: 20px;
+  position: fixed; /* Fixes the position relative to the page */
+  top: 20px; /* Adjust the top position from the page's top */
+  right: 20px; /* Adjust the right position from the page's right edge */
+  z-index: 1000; /* Ensures it stays on top of other content */
+  font-family: monospace;
+  background-color: #f2f2f2;
+}
+
+.chart-section {
+  width: 30%; /* Adjust width to fit three sections in a row */
+  padding: 0; /* Remove any padding to keep things tight */
+  border: 0px solid #ddd; /* Optional: add borders to visually separate sections */
+}
+
+
+/* Each chart section */
+.chart-section {
+  margin: 0px;
+  width: 100%;
+  max-width: 500px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: #f9f9f9;
+}
+/* Button to collapse/expand sections */
+.collapse-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.collapse-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Initially hide the content */
+.chart-content {
+  display: none;
+  margin-top: 10px;
+}
+
+/* When expanded, show the content */
+.chart-content.show {
+  display: block;
+}
