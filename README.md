@@ -4,8 +4,12 @@ Hi this is my first project in github and I am currently doing a codebusters sci
 ## What is Fractionated Morse Code?
 
 - Fractionated Morse Code is a type of cipher that uses Morse code alphabet. It includes Decryption and Encryption but decryption is used most in problems for 
-  Codebusters. 
+  Codebusters.
+- It is a polygraphic substitution cipher, meaning that it replaces plaintext into sets of symbols or letters
 - There will be a key in the table which wil help letter for morse code mapping.
+- ### Decryption
+- In a problem, there will be a hint to solve the problem. For example, the quotes starts with "MITO" ,this is a hint. Using this hint you can find the keyword and solve the problem
+- 
 
 ## How to use this 
 - To solve a new problem press "Generate New Cipher" 
