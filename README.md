@@ -3,7 +3,7 @@ Hi this is my first project in github and I am currently doing a codebusters sci
 
 ## What is Fractionated Morse Code?
 
-- Fractionated Morse Code is a type of cipher that uses Morse code alphabet made from Science Olympiad. It includes Decryption and Encryption but decryption is used most in problems for 
+- Fractionated Morse Code is a type of cipher that uses Morse code alphabet. It includes Decryption and Encryption but decryption is used most in problems for 
   Codebusters. 
 - There will be a key in the table which wil help letter for morse code mapping.
 
@@ -17,7 +17,8 @@ Hi this is my first project in github and I am currently doing a codebusters sci
 
 ## Extra tools
     
-- There is a 2 min timer that can help you time your problemsIf you need the keyword you can press on that to solve the problem
+- There is a 2 min timer that can help you time your problems
+- If you need the keyword you can press on that to solve the problem
     
 - Each time you finish a problem your score will go up by 1 point
 
