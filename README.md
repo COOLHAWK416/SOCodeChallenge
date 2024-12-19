@@ -1,7 +1,11 @@
 # SOCodeChallenge
 Hi this is my first project in github and I am currently doing a codebusters science olympiad event. So I made this webpage to help me solve Fractionated Morse ciphers. 
 
-How to use this
+How to use this @settings { 
+  font-size: 100;
+}
+
+
 
 To solve a new problem press "Generate New Cipher" 
 
