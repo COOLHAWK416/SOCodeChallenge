@@ -3,9 +3,12 @@ Hi this is my first project in github and I am currently doing a codebusters sci
 
 ## What is Fractionated Morse Code?
 
-- Fractionated Morse Code is a type of cipher that uses Morse code alphabet to encrypt a message . Morse Code alphabet is made up of dots and dashes. Each letter (A-Z) and numbers (0-9) will have its own pattern of dots and dashes. In this cipher x's are used to either separate a letter or a word. 2 x's separate a word and 1 x separates a letter.  Decryption is used mostly in Science Olympiad, so that is why I focused on making this project on decryption of Fractionated Morse Code
+- Fractionated Morse Code is a type of cipher that uses Morse code alphabet to encrypt a message . Morse Code alphabet is made up of dots and dashes. Each letter (A-Z) and numbers (0-9) will have its own pattern of dots and dashes. Decryption is used mostly in Science Olympiad, so that is why I focused on making this project on decryption of Fractionated Morse Code
 - It is a polygraphic substitution cipher, meaning that it replaces plaintext into sets of symbols or letters
 - There will be a key in the table which wil help letter for morse code mapping.
+- ### Encryption
+- Quotes will be encrypted by using morse code. The quote will be converted into morse code and the keyword will be given to map out. This will help you map out which encrypted text decodes to what. Keywords are filled in the Fractionated Morse Code Table at the first blank without using repeated letters. Then the letters that are not used in the keyword will be filled in the remaining space of the fractionated morse code table alphabetically.
+- Fractionated Morse Code table is formed by all the combinations of "x", ".", and "-"'s. The only combination that cannot be used in Fractionated morse code is "XXX" because "xx separate words and "x" separates letters.
 - ### Decryption
 - In a problem, there will be a hint to solve the problem. For example, the quotes starts with "MITO" ,this is a hint. Using this hint you can find the keyword and solve the problem
 - #### Steps
