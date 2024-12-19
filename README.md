@@ -3,7 +3,7 @@ Hi this is my first project in github and I am currently doing a codebusters sci
 
 ## What is Fractionated Morse Code?
 
-- Fractionated Morse Code is a type of cipher that uses Morse code alphabet. Morse Code alphabet is made up of dots and dashes. Each letter will have its own pattern of dots and dashes. In this cipher x's are used to either separate a letter or a word. 2 x's separate a word and 1 x separates a letter.  Decryption is used mostly in Science Olympiad, so that is why I focused on making this project on decryption of Fractionated Morse Code
+- Fractionated Morse Code is a type of cipher that uses Morse code alphabet. Morse Code alphabet is made up of dots and dashes. Each letter and number in the English alphabet will have its own pattern of dots and dashes. In this cipher x's are used to either separate a letter or a word. 2 x's separate a word and 1 x separates a letter.  Decryption is used mostly in Science Olympiad, so that is why I focused on making this project on decryption of Fractionated Morse Code
 - It is a polygraphic substitution cipher, meaning that it replaces plaintext into sets of symbols or letters
 - There will be a key in the table which wil help letter for morse code mapping.
 - ### Decryption
