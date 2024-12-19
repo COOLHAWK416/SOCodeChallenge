@@ -9,7 +9,12 @@ Hi this is my first project in github and I am currently doing a codebusters sci
 - There will be a key in the table which wil help letter for morse code mapping.
 - ### Decryption
 - In a problem, there will be a hint to solve the problem. For example, the quotes starts with "MITO" ,this is a hint. Using this hint you can find the keyword and solve the problem
-- 
+- #### Steps
+ 1. First convert the hint into morse code. For example for "MITO" you would convert it to "--x..x-x---x"
+ 2. Split each characters into 3
+ 3. Fill the table by putting the letter that fits the 3 characters
+ 4. Using these hints, fill them in the problem then find out the keyword
+  
 
 ## How to use this 
 - To solve a new problem press "Generate New Cipher" 
