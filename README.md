@@ -1,13 +1,13 @@
 # SOCodeChallenge
 Hi this is my first project in github and I am currently doing a codebusters science olympiad event. So I made this webpage to help me solve Fractionated Morse ciphers. 
 
-##What is Fractionated Morse Code?
+## What is Fractionated Morse Code?
 
 - Fractionated Morse Code is a type of cipher that uses Morse code alphabet made from Science Olympiad. It includes Decryption and Encryption but decryption is used most in problems for 
   Codebusters. 
 - There will be a key in the table which wil help letter for morse code mapping.
 
-##How to use this 
+## How to use this 
 - To solve a new problem press "Generate New Cipher" 
 - If you need a hint press "Give a hint", there are 2 options for the hints "Start with" and "Ends with" press the one that you want Then you can start solving the problem. If you need the fractionated morse table as a reference press the blue buttons that say "Morse Cod (a-m)" After finishing the problem there will be a blank text page below the question where you will have to enter the decoded message
 - Then finally press "Check Answer" at the top
